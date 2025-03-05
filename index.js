@@ -6,7 +6,7 @@ const TARGET_SERVER = 'https://kevan.in.ngrok.io'; // Replace with your target s
 
 // Proxy middleware to forward requests
 app.use(
-    '/api/v1/albums', // Forward all requests
+    '/', // Forward all requests
     createProxyMiddleware({
         target: TARGET_SERVER,
         changeOrigin: true,
